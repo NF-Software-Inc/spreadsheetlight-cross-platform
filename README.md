@@ -13,6 +13,12 @@ The library uses System.Drawing.Common, which required some platform checks to e
 
 * `.InsertPicture()` method [Issue Reference](https://github.com/NF-Software-Inc/spreadsheetlight-cross-platform/issues/10)
 
+## Versioning Notice
+
+As of version 10.0.0, SpreadsheetLight Cross Platform has adopted a new versioning scheme that aligns its major version with the .NET major version it targets. This change is intended to provide better clarity and consistency with regard to supported frameworks.
+
+Going forward, the major version of SpreadsheetLight Cross Platform will correspond to the major version of .NET it targets (e.g., SpreadsheetLight Cross Platform 10.x.x targets .NET 10). The minor and patch versions are used for library-specific updates and do not map to .NET's minor or SDK versions.
+
 ## Getting Started
 
 These instuctions can be used to acquire and implement the library.
