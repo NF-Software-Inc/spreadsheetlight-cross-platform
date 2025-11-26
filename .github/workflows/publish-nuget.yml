@@ -38,7 +38,7 @@ jobs:
           9.0.x
           8.0.x
     - name: Install Dependencies
-      run: dotnet restore SpreadsheetLight.csproj
+      run: dotnet restore spreadsheetlight-cross-platform/SpreadsheetLight.csproj
     - run: mkdir ${{ env.TempDirectory }}
     - name: Build & Pack
       run: |
