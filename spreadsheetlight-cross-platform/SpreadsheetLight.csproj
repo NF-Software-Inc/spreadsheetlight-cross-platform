@@ -2,15 +2,15 @@
 
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 		<RootNamespace>$(MSBuildProjectName.Replace("-", "_"))</RootNamespace>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Copyright>Copyright 2011 Vincent Tan Wai Lip</Copyright>
 		<Company>NF Software Inc.</Company>
 		<Authors>Vincent Tan, NF Software Inc.</Authors>
-		<Version>3.7.0</Version>
-		<AssemblyVersion>3.7.0.0</AssemblyVersion>
-		<FileVersion>3.7.0.0</FileVersion>
+		<Version>10.0.0</Version>
+		<AssemblyVersion>10.0.0.0</AssemblyVersion>
+		<FileVersion>10.0.0.0</FileVersion>
 		<PackageId>SpreadsheetLight.Cross.Platform</PackageId>
 		<PackageTags>spreadsheetlight openxml excel export template xlsx</PackageTags>
 		<RepositoryUrl>https://github.com/NF-Software-Inc/spreadsheetlight-cross-platform</RepositoryUrl>
@@ -23,6 +23,8 @@
 			This is a fork of the original code designed to run on .NET Core. It also includes OS platform checks so that code requiring Windows will not execute on other platforms. Some features may not work on non-Windows platforms.
 		</Description>
 		<PackageReleaseNotes>
+			10.0.0 Add support for .NET 10.0
+
 			3.7.0 Drop support for .NET 6.0 and add support for .NET 9.0
 
 			3.6.0 Drop support for .NET 7.0, Enable use in .NET 9.0, Bugfix for ArgumentOutOfRangeException on SLDocument creation on Linux (Issue #5)
@@ -63,7 +65,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="DocumentFormat.OpenXml" Version="[2.18.0,3)" />
-		<PackageReference Include="System.Drawing.Common" Version="[8.0.0,10)" />
+		<PackageReference Include="System.Drawing.Common" Version="[8.0.0,11)" />
 	</ItemGroup>
 
 	<ItemGroup>
