@@ -1,0 +1,80 @@
+name: "🐛 Bug"
+description: "Something is Broken / Incorrect"
+title: "[Bug]: "
+labels: ["bug", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide enough detail to reproduce quickly.
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - "S1 - Work stopped / production impact"
+        - "S2 - Major functionality broken"
+        - "S3 - Minor issue / workaround exists"
+        - "S4 - Cosmetic / nice-to-have"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What Happened?
+      description: "What did you observe? Include exact error messages."
+      placeholder: "Describe what you saw."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What Should Have Happened? (optional)
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps To Reproduce (optional)
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (optional)
+      placeholder: |
+        App / Module:
+        URL (if applicable):
+        Browser: 
+        OS / Device:
+        Location (if relevant):
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs / Screenshots / Video (optional)
+      description: "Paste logs or describe attachments. (You can upload files after creating the issue, too.)"
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: "I searched existing issues and this is not a duplicate."
+          required: true
+        - label: "This is reproducible."
+          required: false
