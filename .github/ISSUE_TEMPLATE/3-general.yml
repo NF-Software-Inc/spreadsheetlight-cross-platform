@@ -1,0 +1,23 @@
+name: "🧾 General"
+description: "General Request, Question, Cleanup, Admin, Misc"
+title: "[General]: "
+labels: ["help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when it's not clearly a bug or a feature request.
+
+  - type: textarea
+    id: request
+    attributes:
+      label: Request / Question
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Background (optional)
+    validations:
+      required: false

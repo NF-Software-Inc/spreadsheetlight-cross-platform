@@ -1,0 +1,55 @@
+name: "✨ Feature"
+description: "New Feature / Change Request"
+title: "[Feature]: "
+labels: ["enhancement", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Provide the problem + acceptance criteria so we can estimate and implement with minimal back-and-forth.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - "P1 - Critical / Contractual"
+        - "P2 - High"
+        - "P3 - Normal"
+        - "P4 - Low"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: "What problem are you trying to solve?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution (optional)
+      description: "What do you want to happen?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / References (optional)
+      description: "Screenshots, sample data, links, etc."
+    validations:
+      required: false
